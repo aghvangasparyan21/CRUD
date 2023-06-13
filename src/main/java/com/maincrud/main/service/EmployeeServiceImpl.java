@@ -28,7 +28,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         Optional<Employee> employee = employeeRepository.findById(id);
         Employee theEmployee = null;
         if (employee.isPresent()) {
-           theEmployee = employee.get();
+            theEmployee = employee.get();
         } else {
             throw new RuntimeException("Did not found employee id - " + id);
         }
